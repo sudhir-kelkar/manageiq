@@ -140,7 +140,7 @@ group :cisco_intersight, :manageiq_default do
 end
 
 group :embedded_terraform, :manageiq_default do
-  manageiq_plugin "manageiq-providers-embedded_terraform"
+  gem "manageiq-providers-embedded_terraform", :git => "https://github.com/sudhir-kelkar/manageiq-providers-embedded_terraform", :branch => "UpdateGidUid"
 end
 
 group :foreman, :manageiq_default do
